@@ -1,14 +1,16 @@
 // @flow
 
-import {createStore, combineReducers} from 'redux';
-import system from './modules/system/';
+import {applyMiddleware, createStore, combineReducers} from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import movies, {saga} from './modules/movies/';
 
-//
-// Lets create the store with the reducer and listen for updates.
-//
 const reducer = combineReducers({
-  system
+  movies
 });
-const store = createStore(reducer);
+const sagaMiddleware = createSagaMiddleware();
+const rootMiddleware = applyMiddleware(sagaMiddleware);
+const store = createStore(reducer, rootMiddleware);
+
+sagaMiddleware.run(saga);
 
 export default store;
