@@ -31,9 +31,14 @@ const MovieCharacterList = (props: PropsType) => {
       <button onClick={loadCharacters}>Load characters</button>
       <br />
       <br />
-      {characterIds.map(id => (
-        <Character key={id} movieId={movieId} characterId={id} />
-      ))}
+      {characterIds.length
+        ? characterIds.map(id => (
+            <Character key={id} movieId={movieId} characterId={id} />
+          ))
+        : 'No characters loaded yet...'}
+      <br />
+      <br />
+      <button onClick={loadCharacters}>Load characters</button>
     </div>
   );
 };

@@ -34,10 +34,11 @@ const MovieCharacterList = (props: PropsType) => {
 
   return (
     <div>
-      {characterIds.length ? null : 'No characters loaded yet...'}
-      {characterIds.map(id => (
-        <Character key={id} movieId={movieId} characterId={id} />
-      ))}
+      {characterIds.length
+        ? characterIds.map(id => (
+            <Character key={id} movieId={movieId} characterId={id} />
+          ))
+        : 'No characters loaded yet...'}
     </div>
   );
 };
