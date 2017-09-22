@@ -27,6 +27,9 @@ This will clone the repository, install all dependencies and open the workshop e
 
 ## Additional documentation and information
 * [Slides in German](https://docs.google.com/presentation/d/1BE9CYgMaQDlnoCZMfRj5OvYNtRyMwoyo9BYaWsmBGZ4/edit?usp=sharing)
+* [Official docs of redux](http://redux.js.org/docs/introduction/)
+* [Official docs of reselect](https://github.com/reactjs/reselect#reselect)
+* [Official docs of redux-saga](https://redux-saga.js.org/)
 
 ## Contributing
 Please make sure that you adhere to our code style, you can validate your changes / PR by executing `npm run lint`.
