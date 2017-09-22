@@ -18,7 +18,7 @@ type StatePropsType = {
   characterIds: Array<string>
 };
 type DispatchPropsType = {
-  loadCharacters: () => mixed
+  loadCharacters: Function
 };
 type PropsType = OwnPropsType & StatePropsType & DispatchPropsType;
 

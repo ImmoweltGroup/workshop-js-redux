@@ -25,7 +25,7 @@ type OwnPropsType = {
 };
 type StatePropsType = {};
 type DispatchPropsType = {
-  loadCharacters: () => mixed
+  loadCharacters: Function
 };
 type PropsType = OwnPropsType & StatePropsType & DispatchPropsType;
 
