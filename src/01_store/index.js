@@ -33,5 +33,7 @@ store.subscribe(() => {
   console.log('something was dispatched', store.getState());
 });
 
-store.dispatch({type: 'foo'});
-store.dispatch({type: 'foo'});
+store.dispatch({type: 'LOAD_MOVIE_CHARACTERS'});
+
+const characters = [{id: 0, name: 'Darth Vader'}];
+store.dispatch({type: 'SET_MOVIE_CHARACTERS', payload: {characters}});

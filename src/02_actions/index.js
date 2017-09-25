@@ -1,22 +1,28 @@
 // @flow
 
+type CharacterType = {id: string, name: string};
+type validMovieIds = 'starWars' | 'someOtherMovie';
+
 //
 // An action, or `action object` is an object which represent the task and
 // it's arguments you want your application to execute.
 //
-const myAction = {
+const myActionObj = {
   // The action must include a property `type` - It's a string that your application should use
   // to identify the logic it needs to execute.
-  type: 'MY_ACTION_TYPE',
+  type: 'SET_MOVIE_CHARACTERS',
 
   // The payload is an object of arguments that you can specify.
   // This object can be structured the way you and the logic the action executes requires.
   payload: {
-    foo: 'bar'
+    movieId: 'starWars',
+    characters: [
+      {id: 'afdc303e-992e-4b47-b210-9c4944a527e2', name: 'Darth Vader'}
+    ]
   }
 };
 
-console.log(myAction);
+console.log(myActionObj);
 
 //
 // Since creating the object over and over again throughout your application creates code duplication,
@@ -28,16 +34,22 @@ console.log(myAction);
 // This is your API to interact with redux,
 // it reduces code duplication and defines the action object shape in one single place.
 //
-function myActionCreator1(arg1) {
+function setMovieCharacters1(
+  movieId: validMovieIds,
+  characters: Array<CharacterType>
+) {
   return {
-    type: 'MY_ACTION_TYPE',
+    type: 'SET_MOVIE_CHARACTERS',
     payload: {
-      foo: arg1
+      movieId,
+      characters
     }
   };
 }
 
-const myAction1 = myActionCreator1('bar1');
+const myAction1 = setMovieCharacters1('starWars', [
+  {id: 'afdc303e-992e-4b47-b210-9c4944a527e2', name: 'Darth Vader'}
+]);
 
 console.log(myAction1);
 
@@ -51,10 +63,16 @@ console.log(myAction1);
 //
 import {createAction} from 'redux-actions';
 
-const myActionCreator2 = createAction('MY_ACTION_TYPE', arg1 => ({
-  foo: arg1
-}));
+const setMovieCharacters = createAction(
+  'SET_MOVIE_CHARACTERS',
+  (movieId: string, characters: Array<CharacterType>) => ({
+    movieId,
+    characters
+  })
+);
 
-const myAction2 = myActionCreator2('bar2');
+const myAction2 = setMovieCharacters('starWars', [
+  {id: 'afdc303e-992e-4b47-b210-9c4944a527e2', name: 'Darth Vader'}
+]);
 
 console.log(myAction2);

@@ -12,7 +12,18 @@ const initialState = {
 };
 const actionHandlers = {
   [actionTypes.SET_MOVIE_CHARACTERS]: (state, action) => {
-    const {charactersById, movieId} = action.payload;
+    const {characters, movieId} = action.payload;
+    const charactersById = characters.reduce(
+      (charactersById, character, index) => {
+        return Object.assign(
+          {
+            [index]: character
+          },
+          charactersById
+        );
+      },
+      {}
+    );
 
     return $set([movieId, 'charactersById'], charactersById, state);
   }

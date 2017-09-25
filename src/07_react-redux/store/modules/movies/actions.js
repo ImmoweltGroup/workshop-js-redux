@@ -1,6 +1,6 @@
 // @flow
 
-import type {validMovieIds} from './types.js';
+import type {validMovieIds, CharacterType} from './types.js';
 
 import {createAction} from 'redux-actions';
 
@@ -13,9 +13,9 @@ const actionTypes = {
 const actions = {
   setMovieCharacters: createAction(
     actionTypes.SET_MOVIE_CHARACTERS,
-    (movieId: validMovieIds, charactersById: Object) => ({
+    (movieId: validMovieIds, characters: Array<CharacterType>) => ({
       movieId,
-      charactersById
+      characters
     })
   ),
   loadStarWarsMovieCharacters: createAction(

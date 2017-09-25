@@ -10,10 +10,10 @@ import {createStore, combineReducers} from 'redux';
 // With Redux-Modules, sometimes reffered as `redux ducks`,
 // you can split your business logic up into separate parts with boundaries.
 //
-import example from './modules/example/';
+import movies from './modules/movies/';
 
 const reducer = combineReducers({
-  example
+  movies
 });
 const store = createStore(reducer);
 
