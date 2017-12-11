@@ -21,7 +21,7 @@ import {actions as moviesActions} from './../../store/modules/movies/';
 import Button from './../../components/button/';
 
 type OwnPropsType = {
-  movieId: validMovieIds
+  movieId: validMovieIds // eslint-disable-line react/no-unused-prop-types
 };
 type StatePropsType = {};
 type DispatchPropsType = {

@@ -8,8 +8,8 @@ import {connect} from 'react-redux';
 import {getMovieCharacterForId} from './store/modules/movies/selectors.js';
 
 type OwnPropsType = {
-  movieId: validMovieIds,
-  characterId: string
+  movieId: validMovieIds, // eslint-disable-line react/no-unused-prop-types
+  characterId: string // eslint-disable-line react/no-unused-prop-types
 };
 type StatePropsType = {
   character: Object

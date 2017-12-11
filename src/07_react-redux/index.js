@@ -62,5 +62,7 @@ ReactDOM.render(
   <Provider store={store}>
     <ConnectedMovieCharacterList movieId="starWars" />
   </Provider>,
+
+  // $FlowFixMe: Flow throws an error since getElementById could return `null`. This seems like a bug in flow itself?
   document.getElementById('playground')
 );
