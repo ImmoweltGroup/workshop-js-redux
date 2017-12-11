@@ -36,7 +36,7 @@
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
     "cross-env": "5.1.1",
-    "eslint": "4.13.0",
+    "eslint": "4.13.1",
     "flow-bin": "0.61.0",
     "flow-typed": "2.2.3",
     "glob": "7.1.2",
