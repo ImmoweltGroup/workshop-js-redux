@@ -1,10 +1,10 @@
 # @immowelt/workshop-js-redux
 
 [![Powered by Immowelt](https://img.shields.io/badge/powered%20by-immowelt-yellow.svg?colorB=ffb200)](https://stackshare.io/immowelt-group/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ImmoweltGroup/workshop-js-redux.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/ImmoweltGroup/workshop-js-redux.svg?branch=master)](https://travis-ci.org/ImmoweltGroup/workshop-js-redux)
 [![Dependency Status](https://david-dm.org/ImmoweltGroup/workshop-js-redux.svg)](https://david-dm.org/ImmoweltGroup/workshop-js-redux)
 [![devDependency Status](https://david-dm.org/ImmoweltGroup/workshop-js-redux/dev-status.svg)](https://david-dm.org/ImmoweltGroup/workshop-js-redux#info=devDependencies&view=table)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovateapp.com/)
 
 > A living workshop around Redux and Redux in combination with React with playground samples for the attendees.
 
