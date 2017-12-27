@@ -7,17 +7,17 @@
   "description": "A living workshop around Redux and Redux in combination with React with playground samples for the attendees.",
   "scripts": {
     "start": "run-p serve build:watch",
-    "test": "npm run build && npm run lint",
+    "test": "yarn run build && yarn run lint",
     "serve": "serve . --open --clipless",
     "build": "cross-env NODE_ENV=development webpack",
-    "build:watch": "npm run build -- --watch",
+    "build:watch": "yarn run build -- --watch",
     "prettier": "prettier --write 'src/**/*.{js,json}'",
     "precommit": "lint-staged",
     "lint": "eslint src",
     "flow": "flow",
     "flow-typed": "flow-typed",
     "flow-typed-install": "flow-typed install --ignoreDeps=bundled peer --overwrite",
-    "prepare": "npm run flow-typed-install || true"
+    "prepare": "yarn run flow-typed-install || true"
   },
   "lint-staged": {
     "src/**/*.{js,json,css}": [
@@ -26,8 +26,7 @@
     ]
   },
   "engines": {
-    "node": ">=8.4.0",
-    "npm": ">=5.3.0"
+    "node": ">=8.4.0"
   },
   "devDependencies": {
     "@immowelt/babel-preset-immowelt-react": "1.2.2",
