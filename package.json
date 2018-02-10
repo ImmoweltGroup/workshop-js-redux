@@ -45,7 +45,7 @@
     "prettier": "1.10.2",
     "redux-saga": "0.16.0",
     "reselect": "3.0.1",
-    "webpack": "3.10.0"
+    "webpack": "3.11.0"
   },
   "dependencies": {
     "code-mirror-themes": "1.0.0",
