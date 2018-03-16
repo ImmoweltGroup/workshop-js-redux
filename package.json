@@ -37,7 +37,7 @@
     "cross-env": "5.1.4",
     "eslint": "4.18.2",
     "flow-bin": "0.68.0",
-    "flow-typed": "2.3.0",
+    "flow-typed": "2.4.0",
     "glob": "7.1.2",
     "husky": "0.14.3",
     "lint-staged": "6.1.1",
