@@ -57,6 +57,6 @@
     "react-redux": "5.0.7",
     "redux": "3.7.2",
     "redux-actions": "2.4.0",
-    "serve": "7.1.2"
+    "serve": "7.1.4"
   }
 }
