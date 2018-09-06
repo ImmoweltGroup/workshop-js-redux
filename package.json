@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@immowelt/babel-preset-immowelt-react": "1.2.2",
-    "@immowelt/eslint-config-immowelt-react": "2.0.4",
+    "@immowelt/eslint-config-immowelt-react": "2.1.1",
     "@immowelt/styleguide-javascript": "1.0.11",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
