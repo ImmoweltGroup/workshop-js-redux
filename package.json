@@ -29,7 +29,7 @@
     "node": ">=8.4.0"
   },
   "devDependencies": {
-    "@immowelt/babel-preset-immowelt-react": "1.2.2",
+    "@immowelt/babel-preset-immowelt-react": "1.2.4",
     "@immowelt/eslint-config-immowelt-react": "2.0.4",
     "@immowelt/styleguide-javascript": "1.0.11",
     "babel-core": "6.26.3",
